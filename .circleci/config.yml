@@ -3,6 +3,7 @@ jobs:
   build:
     docker:
       - image: circleci/node
+      - image: circleci/postgres:9.6-alpine
     steps:
       - checkout # check out the code in the project directory
       - run: echo "hello world" # run the `echo` command
